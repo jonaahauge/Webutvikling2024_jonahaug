@@ -6,7 +6,7 @@
 		<title>Registreringsskjema</title>
 	</head>
 	<body>
-		<form action="" method="post">
+		<form method="post">
 			<label
 				>Navn:<input
 					pattern="[A-Za-zæøåÆØÅ ]{2,}"
@@ -15,7 +15,7 @@
 				/> </label
 			><br />
 			<label>E-post:<input type="email" required /> </label><br />
-			<label for="passord"
+			<label
 				>Passord:
 				<input
 					type="password"
@@ -24,29 +24,38 @@
 					required
 				/> </label
 			><br />
-			<label for=""
-				>Alder:<input type="number" min="18" max="99" required /></label
+			<label>Alder:<input type="number" min="18" max="99" required /></label
 			><br />
-			<label for=""
+			<label
 				>Telefonnummer:<input
 					type="tel"
 					pattern="[0-9]{8,12}"
 					required /></label
 			><br />
-			<label for=""
-				>Fødselsdato:<input type="date" max="2023-12-31" required /></label
+			<label>Fødselsdato:<input type="date" max="2023-12-31" required /></label>
+			<br />
+			<label>Kjønn:</label><br />
+			<label
+				>Mann:<input name="kjønn" value="mann" type="radio" required /></label
+			><br /><label
+				>Kvinne:<input
+					name="kjønn"
+					value="kvinne"
+					type="radio"
+					required /></label
 			><br />
-			<label for="kjønn"
-				>Kjønn:<label><br />Mann:<input name="kjønn" value="mann" type="radio" required /></label><br />
-				<label>Kvinne:<input name="kjønn" value="kvinne" type="radio" required /></label><br />
-				</label>Annet:<label for=""><input name="kjønn" value="annet" type="radio" required /></label><br /></label
+			<label
+				>Annet:<input name="kjønn" value="annet" type="radio" required /></label
+			><br /><br />
+			<label for="land"
+				>Land:<select id="land" name="land" required>
+					<option value="">Velg et Land</option>
+					<option value="norge">Norge</option>
+					<option value="sverige">Sverige</option>
+					<option value="danmark">Danmark</option>
+				</select></label
 			><br />
-			<label for="land">Land:<select name="land" required>
-				<option value="norge">Norge</option>
-				<option value="sverige">Sverige</option>
-				<option value="danmark">Danmark</option>
-			</select></label><br/>
-			<label for="">Personvern:<input type="checkbox" required/></label><br/>
+			<label>Personvern:<input type="checkbox" required /></label><br />
 			<input type="submit" />
 		</form>
 	</body>
