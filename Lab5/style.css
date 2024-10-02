@@ -13,21 +13,18 @@ header {
 	text-transform: uppercase;
 	padding: 50px 0px;
 	text-align: center;
-	flex-wrap: wrap;
 }
 
-nav ul {
+.nav-menu > ul {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
-}
-
-nav li {
+	font-size: large;
+	font-weight: 600;
 	list-style: none;
-	color: black;
 }
 
-nav a {
+a {
 	color: black;
 }
 
@@ -42,6 +39,12 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	flex: auto;
+}
+
+.article-section-div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 article {
