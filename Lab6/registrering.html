@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Registrering</title>
+	</head>
+	<body>
+		<header>
+			<h1>Løsningsforslag: Øvelse 3</h1>
+		</header>
+
+		<nav>
+			<nav>
+				<ul>
+					<li><a href="index.html">Hjem</a></li>
+					<li><a href="validering.html">Valideringsoppgave</a></li>
+					<li><a href="oppskrift.html">Lister: Oppskrift</a></li>
+					<li><a href="mal.html">Mal</a></li>
+					<li><a href="#">Kontakt oss</a></li>
+					<li><a href="tabell.html">Studieplan</a></li>
+				</ul>
+			</nav>
+		</nav>
+		<main>
+			<h2>Registrering</h2>
+			<form>
+				<label>
+					Navn
+					<input
+						type="text"
+						pattern="[A-Za-zæøåÆØÅ ]{2,}"
+						required
+						placeholder="Nora Nordman.."
+					/>
+				</label>
+
+				<label>
+					E-post
+					<input
+						type="email"
+						pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+						required
+						placeholder="eksempel@hiof.no"
+					/>
+				</label>
+
+				<label>
+					Passord
+					<input
+						type="password"
+						pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+						minlength="8"
+						required
+						placeholder="******"
+					/>
+				</label>
+
+				<label>
+					Alder
+					<input type="number" min="18" max="99" required />
+				</label>
+
+				<label>
+					Telefon
+					<input type="tel" pattern="[0-9]{8,12}" required />
+				</label>
+
+				<label>
+					Fødselsdato
+					<input type="date" max="2023-12-31" required />
+				</label>
+
+				<fieldset>
+					<legend>Kjønn</legend>
+					<label>
+						Mann
+						<input type="radio" name="gender" value="man" />
+					</label>
+
+					<label>
+						Kvinne
+						<input type="radio" name="gender" value="female" />
+					</label>
+
+					<label>
+						Annet
+						<input type="radio" name="gender" value="other" />
+					</label>
+				</fieldset>
+
+				<label>
+					Land
+					<select required>
+						<option value="">Velg et land</option>
+						<option value="norge">Norge</option>
+						<option value="danmark">Danmark</option>
+						<option value="sverige">Sverige</option>
+					</select>
+				</label>
+
+				<label>
+					Godkjenn personvern
+					<input type="checkbox" required />
+				</label>
+
+				<input type="submit" value="Send" />
+			</form>
+		</main>
+
+		<footer>
+			<p>Jon Hauge</p>
+			<p><a href="mailto:jonahaug@hiof.no"></a>jonahaug@hiof.no</p>
+		</footer>
+	</body>
+</html>
