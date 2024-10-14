@@ -1,0 +1,33 @@
+body {
+	height: 100vh;
+	box-sizing: border-box;
+}
+
+header > nav {
+	background-color: lightgray;
+	padding: 15px;
+}
+
+header > nav > ul {
+	display: block;
+	list-style-type: none;
+	color: black;
+	margin: auto;
+	padding: 10px 0px 0px 0px;
+}
+
+header > nav > ul > li {
+	margin: 5px;
+}
+
+header > nav > a {
+	text-decoration: none;
+	padding: 120px;
+}
+header > nav > ul > li > a {
+	text-decoration: none;
+}
+
+header > nav {
+	text-align: center;
+}
